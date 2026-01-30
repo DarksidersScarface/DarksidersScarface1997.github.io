@@ -3,44 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applied AI Observer: Writing Tools</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Applied AI Observer: Writing Tools</h1>
-        <p class="tagline">Covering AI writing tools and classroom use</p>
-        <nav>
-            <a href="index.html">Home</a> newsletter post 1
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-
-    <main>
-        <ul class="post-list">
-            <li>
-                <a href="ai-in-education-chatgpt.html">AI Tools Like ChatGPT Are Reshaping Education</a>
-                <span class="date">January 22, 2026</span>
-            </li>
-            <li>
-                <a href="chatgpt-ai-toolset-expansion.html">ChatGPT Expands Its AI Toolset for Writing and Analysis</a>
-                <span class="date">January 22, 2026</span>
-            </li>
-        </ul>
-    </main>
-
-    <footer>
-        <p>&copy; Jaurary 23, 2026 Nicholas Best</p> 
-    </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI in Education - Applied AI Observer</title>
+    <title>About - Applied AI Observer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,26 +16,18 @@
     </header>
 
     <main>
-        <article>
-            <h2>AI Tools Like ChatGPT Are Reshaping Education</h2>
-            <p cah20>class="date">January 22, 2026</p>
+        <h2>About This Newsletter</h2>
+        <p>
+            This newsletter focuses on AI writing tools such as ChatGPT and how they are used in education, productivity, and creative work.
+        </p>
+        <p>
+            I chose this focus to understand better how AI tools are changing the way people write, learn, and communicate.
+        </p>
 
-            <p> 
-                AI writing tools such as ChatGPT are increasingly being integrated into classroom assignments, signaling a shift in how educators approach artificial intelligence.
-            </p>
-
-            <p>
-                Instead of banning AI tools, many instructors now require students to use them for brainstorming, outlining, summarizing sources, or revising drafts. The focus has moved toward transparency, ethical use, and critical thinking rather than avoidance.
-            </p>
-
-            <p>
-                OpenAI’s classroom-friendly features, including explanation-based responses and iterative feedback, support learning while still holding students accountable for original thought. This approach helps students develop AI literacy alongside traditional writing skills.
-            </p>
-
-            <p>
-                This change matters because AI tools are becoming standard in professional environments. Teaching students how to use them responsibly prepares them for real-world workflows. I chose this topic because it directly connects to how education is adapting to rapid technological change.
-            </p>
-        </article>
+        <h2>About Me</h2>
+        <p>
+            I am a student in CAH 205: Applied AI at Lindenwood University, exploring real-world applications of artificial intelligence.
+        </p>
     </main>
 
     <footer>
