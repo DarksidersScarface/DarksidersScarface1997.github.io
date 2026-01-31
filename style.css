@@ -1,0 +1,160 @@
+/* Applied AI Observer - Nicholas Best */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fafafa;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #2C3E50;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    min-height: 60vh;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Posts section */
+.posts h2 {
+    color: #2C3E50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-list {
+    list-style: none;
+}
+
+.post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-list a {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.post-list a:hover {
+    color: #17A2B8;
+}
+
+.post-list .date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Article pages */
+article {
+    margin-bottom: 3rem;
+}
+
+article h2 {
+    color: #2C3E50;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+article .date {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+article p {
+    margin-bottom: 1.2rem;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+blockquote {
+    border-left: 4px solid #2C3E50;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
