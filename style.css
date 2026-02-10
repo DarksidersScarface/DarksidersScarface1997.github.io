@@ -1,37 +1,51 @@
-:root {
-    --primary: #2563eb;
-    --dark: #0f172a;
-    --slate: #64748b;
-    --light: #f8fafc;
-}
-
-body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--dark); margin: 0; padding-bottom: 50px; }
-
-header { 
-    background: var(--dark); 
-    color: white; 
-    padding: 4rem 1rem; 
-    text-align: center; 
-    border-bottom: 8px solid var(--primary);
-}
-
-.card { 
-    background: white; 
-    padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
-    border-left: 5px solid var(--primary);
-    transition: all 0.2s ease-in-out;
-}
-
-.card:hover { transform: scale(1.02); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-
-footer { 
-    margin-top: 60px; 
-    text-align: center; 
-    color: var(--slate); 
-    font-size: 0.9rem;
+/* Unique AI Class Theme */
+body {
+    background-color: #0f172a; /* Deep Slate */
+    color: #e2e8f0; /* Soft White */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
     padding: 20px;
 }
 
-.featured { width: 100%; border-radius: 12px; height: 350px; object-fit: cover; margin-bottom: 2rem; }
+header {
+    border-bottom: 3px solid #38bdf8; /* Electric Blue */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 { color: #38bdf8; text-transform: uppercase; letter-spacing: 2px; }
+
+.newsletter-card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #38bdf8;
+    transition: transform 0.3s ease;
+}
+
+.newsletter-card:hover {
+    transform: scale(1.02);
+    background: #2d3748;
+}
+
+a { color: #7dd3fc; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
+
+.source-tag {
+    font-size: 0.8rem;
+    background: #334155;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #94a3b8;
+}
+
+.creative-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 2px solid #38bdf8;
+}
