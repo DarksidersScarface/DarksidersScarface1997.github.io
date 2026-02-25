@@ -1,121 +1,58 @@
-/* AI WRITING & REVISION: FINAL PHASE STYLE
-   Theme: High-Tech Educational / Professional Caution
-   Standard: WCAG 2.1 AA Compliant
-*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Writing & Revision | Nicholas Best</title>
+</head>
+<body>
 
-:root {
-    /* Color Palette - 2026 Trends */
-    --bg-dark: #020617;          /* Deep Space Blue */
-    --card-bg: rgba(30, 41, 59, 0.7); /* Frosted Slate */
-    --primary: #38bdf8;          /* Electric Sky (AA Contrast) */
-    --accent: #818cf8;           /* Soft Indigo */
-    --caution: #fbbf24;          /* Amber for Precautions */
-    --text-main: #f8fafc;        /* High Contrast White */
-    --text-muted: #94a3b8;       /* Accessible Grey */
-    
-    /* Spacing & Effects */
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --radius: 16px;
-    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-/* 1. Reset & Accessibility Basics */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+<div class="container">
+    <header role="banner">
+        <h1>The Final Blueprint</h1>
+        <p>Strategic AI Revision & Educational Integrity</p>
+    </header>
 
-body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    font-family: 'Inter', -apple-system, system-ui, sans-serif;
-    line-height: 1.7;
-    overflow-x: hidden;
-    padding: 20px;
-}
+    <main id="main-content" role="main">
+        <article class="newsletter-card">
+            <div class="caution-flag" aria-label="Caution">⚠️ Policy Update</div>
+            <h2>1. Global Standards: The UAE Mandate</h2>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Global digital network" class="post-image">
+            <p>New 2026 regulations require a "Human-in-the-loop" process for all AI-assisted academic writing. This post explores how to document your revision steps to meet these global standards.</p>
+            <div class="button-group">
+                <a href="post1.html" class="source-link">Read My Full Analysis →</a>
+            </div>
+        </article>
 
-/* 2. Layout Container */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        <article class="newsletter-card">
+            <div class="caution-flag" aria-label="Caution">⚠️ Academic Integrity</div>
+            <h2>2. The Georgetown Transition</h2>
+            <img src="https://images.unsplash.com/photo-1523050335392-93851179ae22" alt="University library" class="post-image">
+            <p>As universities provide official access to Gemini, the focus shifts from "if" to "how." Learn my strategy for using AI for formative feedback without losing your personal voice.</p>
+            <div class="button-group">
+                <a href="post2.html" class="source-link">View My Strategy →</a>
+            </div>
+        </article>
 
-/* 3. Header - Hero Section */
-header {
-    text-align: center;
-    padding: 80px 20px;
-    background: radial-gradient(circle at top, #1e293b 0%, #020617 70%);
-    border-radius: var(--radius);
-    margin-bottom: 60px;
-    border: 1px solid var(--glass-border);
-}
+        <article class="newsletter-card">
+            <div class="caution-flag" aria-label="Caution">⚠️ Learning Precautions</div>
+            <h2>3. Beyond Homework Compliance</h2>
+            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8" alt="Student studying" class="post-image">
+            <p>AI didn't break homework; it redefined it. Discover how to use ChatGPT as a logic-checker rather than a ghostwriter to ensure you are actually learning the material.</p>
+            <div class="button-group">
+                <a href="post3.html" class="source-link">Read the Breakdown →</a>
+            </div>
+        </article>
+    </main>
 
-header h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 15px;
-    letter-spacing: -1px;
-}
+    <footer role="contentinfo">
+        <p>Developed for AI Class 2026</p>
+        <p><strong>Nicholas Best</strong> | DarksidersScarface1997</p>
+    </footer>
+</div>
 
-header p {
-    color: var(--text-muted);
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* 4. The Newsletter Cards */
-.newsletter-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius);
-    padding: 40px;
-    margin-bottom: 40px;
-    transition: var(--transition);
-    position: relative;
-}
-
-.newsletter-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--primary);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-/* 5. Content Styling */
-.caution-flag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--caution);
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-
-.post-image {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: calc(var(--radius) - 4px);
-    margin: 25px 0;
-    border: 1px solid var(--glass-border);
-}
-
-/* 6. Accessible Links */
-.source-link {
-    display: inline-block;
-    padding:
+</body>
+</html>
