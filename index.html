@@ -1,170 +1,77 @@
-/* AI ACADEMIC REVISION - ULTIMATE THEME 2026
-   Focus: Industrial Strength & Creative Clarity
-*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Writing & Revision | Nicholas Best Final</title>
+</head>
+<body>
 
-:root {
-    /* Sophisticated Dark Mode Palette */
-    --void: #020617;         /* Deepest Blue */
-    --slate-800: #1e293b;    /* Card Surface */
-    --cyan-glow: #22d3ee;    /* Primary Action */
-    --indigo-glow: #6366f1;  /* Secondary Logic */
-    --amber-warning: #f59e0b; /* Caution/Ethics */
-    --text-silk: #f1f5f9;    /* Main Text */
-    
-    /* Advanced Effects */
-    --glass-bg: rgba(15, 23, 42, 0.8);
-    --neon-border: rgba(34, 211, 238, 0.2);
-    --sharp-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-}
+<div class="container">
+    <header>
+        <h1>AI REVISION COMMAND</h1>
+        <p style="color: var(--secondary); letter-spacing: 3px;">WEEK 8 FINAL PORTFOLIO</p>
+    </header>
 
-/* 1. Global Polish */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: default;
-}
+    <section class="stats-grid">
+        <div class="stat-card">
+            <h3 style="color: var(--primary);">FEB 2026</h3>
+            <p>Policy Baseline</p>
+        </div>
+        <div class="stat-card">
+            <h3 style="color: var(--warning);">VERIFIED</h3>
+            <p>Human-Review Mode</p>
+        </div>
+        <div class="stat-card">
+            <h3 style="color: var(--secondary);">LEVEL 4</h3>
+            <p>AI Literacy Score</p>
+        </div>
+    </section>
 
-body {
-    background: radial-gradient(circle at 50% 0%, #0f172a 0%, var(--void) 100%);
-    color: var(--text-silk);
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-}
+    <main>
+        <article class="news-card">
+            <div class="label caution">Critical Analysis</div>
+            <h2>1. College Board: Protecting the "Logical Struggle"</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173" alt="Close up of a hand writing an exam paper">
+            </div>
+            <p>As of February 25, the College Board has identified that student reliance on AI is shifting from "revision" to "replacement." To maintain educational value, we must implement strategies that use ChatGPT to find logical gaps, not to write the argument itself.</p>
+            <a href="post1.html" class="btn">View Logic Analysis →</a>
+        </article>
 
-/* 2. Container & Layout */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        <article class="news-card">
+            <div class="label">Institutional Update</div>
+            <h2>2. Georgetown: The Human-Centered Gemini Standard</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1541339907198-e087569df910" alt="Georgetown University campus">
+            </div>
+            <p>Georgetown University's launch of official Gemini access this week comes with a warning: AI is a "co-pilot," not a "captain." Students are now required to submit a revision history to prove that their final drafts evolved through human critical thinking.</p>
+            <a href="post2.html" class="btn">Read Ethics Guide →</a>
+        </article>
 
-/* 3. Hero Header - Dynamic & Creative */
-header {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    border-bottom: 1px solid var(--neon-border);
-}
+        <article class="news-card">
+            <div class="label caution">Global Compliance</div>
+            <h2>3. UAE Manual: The Ethics of AI Verification</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Digital world map connecting data">
+            </div>
+            <p>The UAE’s 2026 Safe AI Manual introduces the "Verification Law." It mandates that for every AI-suggested change, the student must provide a one-sentence justification. This turns revision from an automated task into a learning moment.</p>
+            <a href="post3.html" class="btn">See Verification Steps →</a>
+        </article>
+    </main>
 
-header h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 0.9;
-    background: linear-gradient(to bottom, #fff 20%, var(--cyan-glow));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-}
+    <footer>
+        <nav style="margin-bottom: 40px;">
+            <a href="references.html" style="color: var(--primary); text-decoration: none; border: 1px solid var(--primary); padding: 12px 25px; border-radius: 10px;">
+                OPEN ACADEMIC BIBLIOGRAPHY (2026)
+            </a>
+        </nav>
+        <p>Project by Nicholas Best</p>
+        <p style="opacity: 0.5; font-size: 0.8rem;">Username: DarksidersScarface1997</p>
+    </footer>
+</div>
 
-header p {
-    font-size: 1.1rem;
-    color: var(--indigo-glow);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 600;
-}
-
-/* 4. Advanced Newsletter Cards */
-.newsletter-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--neon-border);
-    border-radius: 32px;
-    padding: 60px;
-    margin-bottom: 60px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.newsletter-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 4px;
-    background: linear-gradient(90deg, transparent, var(--cyan-glow), transparent);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.newsletter-card:hover {
-    transform: translateY(-15px) scale(1.01);
-    border-color: var(--cyan-glow);
-    box-shadow: var(--sharp-shadow);
-}
-
-.newsletter-card:hover::before {
-    opacity: 1;
-}
-
-/* 5. Content Details */
-.caution-flag {
-    display: inline-block;
-    padding: 6px 12px;
-    background: rgba(245, 158, 11, 0.1);
-    color: var(--amber-warning);
-    border: 1px solid var(--amber-warning);
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
-h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.post-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin: 30px 0;
-    filter: brightness(0.8) contrast(1.2);
-    transition: 0.5s;
-}
-
-.newsletter-card:hover .post-image {
-    filter: brightness(1) contrast(1);
-}
-
-/* 6. Professional Buttons */
-.source-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 18px 40px;
-    background: var(--text-silk);
-    color: var(--void);
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 16px;
-    transition: 0.3s;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.source-button:hover {
-    background: var(--cyan-glow);
-    transform: scale(1.05);
-}
-
-/* 7. Footer / Reference Section */
-footer {
-    padding: 100px 0;
-    text-align: center;
-    border-top: 1px solid var(--neon-border);
-}
-
-footer a {
-    color: var(--indigo-glow);
-    text-decoration: none;
-    font-weight: bold;
-}
+</body>
+</html>
+  
