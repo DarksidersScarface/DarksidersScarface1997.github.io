@@ -1,170 +1,132 @@
-/* AI ACADEMIC REVISION - ULTIMATE THEME 2026
-   Focus: Industrial Strength & Creative Clarity
+/* AI WRITING COMMAND CENTER - FINAL EDITION
+   Author: Nicholas Best (DarksidersScarface1997)
+   Date: February 2026
 */
 
 :root {
-    /* Sophisticated Dark Mode Palette */
-    --void: #020617;         /* Deepest Blue */
-    --slate-800: #1e293b;    /* Card Surface */
-    --cyan-glow: #22d3ee;    /* Primary Action */
-    --indigo-glow: #6366f1;  /* Secondary Logic */
-    --amber-warning: #f59e0b; /* Caution/Ethics */
-    --text-silk: #f1f5f9;    /* Main Text */
-    
-    /* Advanced Effects */
-    --glass-bg: rgba(15, 23, 42, 0.8);
-    --neon-border: rgba(34, 211, 238, 0.2);
-    --sharp-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    --bg: #030712;
+    --surface: rgba(17, 24, 39, 0.7);
+    --primary: #22d3ee; /* Cyan Glow */
+    --secondary: #818cf8; /* Indigo */
+    --warning: #fbbf24; /* Caution Amber */
+    --text: #f3f4f6;
+    --border: rgba(255, 255, 255, 0.1);
 }
 
-/* 1. Global Polish */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: default;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background: radial-gradient(circle at 50% 0%, #0f172a 0%, var(--void) 100%);
-    color: var(--text-silk);
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: radial-gradient(circle at top, #111827, var(--bg));
+    color: var(--text);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    min-height: 100vh;
+    padding-bottom: 100px;
 }
 
-/* 2. Container & Layout */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* 3. Hero Header - Dynamic & Creative */
+/* Header Section */
 header {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 0 60px;
     text-align: center;
-    position: relative;
-    border-bottom: 1px solid var(--neon-border);
 }
 
 header h1 {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 0.9;
-    background: linear-gradient(to bottom, #fff 20%, var(--cyan-glow));
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
 }
 
-header p {
-    font-size: 1.1rem;
-    color: var(--indigo-glow);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 600;
+/* Statistics Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
 }
 
-/* 4. Advanced Newsletter Cards */
-.newsletter-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--neon-border);
+.stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Main Content Cards */
+.news-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 32px;
-    padding: 60px;
-    margin-bottom: 60px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    padding: 50px;
+    margin-bottom: 40px;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(15px);
 }
 
-.newsletter-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 4px;
-    background: linear-gradient(90deg, transparent, var(--cyan-glow), transparent);
-    opacity: 0;
-    transition: 0.5s;
+.news-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
 }
 
-.newsletter-card:hover {
-    transform: translateY(-15px) scale(1.01);
-    border-color: var(--cyan-glow);
-    box-shadow: var(--sharp-shadow);
-}
-
-.newsletter-card:hover::before {
-    opacity: 1;
-}
-
-/* 5. Content Details */
-.caution-flag {
+.label {
     display: inline-block;
-    padding: 6px 12px;
-    background: rgba(245, 158, 11, 0.1);
-    color: var(--amber-warning);
-    border: 1px solid var(--amber-warning);
-    border-radius: 100px;
+    padding: 5px 15px;
+    border-radius: 50px;
     font-size: 0.75rem;
-    font-weight: 800;
-    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: rgba(34, 211, 238, 0.1);
+    color: var(--primary);
 }
 
-h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #fff;
+.label.caution {
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--warning);
 }
 
-.post-image {
+.image-container img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
-    margin: 30px 0;
-    filter: brightness(0.8) contrast(1.2);
-    transition: 0.5s;
+    margin: 25px 0;
+    border: 1px solid var(--border);
 }
 
-.newsletter-card:hover .post-image {
-    filter: brightness(1) contrast(1);
-}
+/* Typography */
+h2 { font-size: 2.2rem; margin-bottom: 15px; }
+p { font-size: 1.1rem; color: #9ca3af; margin-bottom: 20px; }
 
-/* 6. Professional Buttons */
-.source-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 18px 40px;
-    background: var(--text-silk);
-    color: var(--void);
-    font-weight: 700;
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--primary);
+    color: var(--bg);
     text-decoration: none;
-    border-radius: 16px;
+    font-weight: 700;
+    border-radius: 12px;
     transition: 0.3s;
-    margin-top: 20px;
-    cursor: pointer;
 }
 
-.source-button:hover {
-    background: var(--cyan-glow);
+.btn:hover {
+    background: #fff;
     transform: scale(1.05);
 }
 
-/* 7. Footer / Reference Section */
 footer {
-    padding: 100px 0;
     text-align: center;
-    border-top: 1px solid var(--neon-border);
-}
-
-footer a {
-    color: var(--indigo-glow);
-    text-decoration: none;
-    font-weight: bold;
+    padding-top: 50px;
+    border-top: 1px solid var(--border);
 }
