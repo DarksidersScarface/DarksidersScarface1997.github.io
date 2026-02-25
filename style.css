@@ -1,95 +1,121 @@
+/* AI WRITING & REVISION: FINAL PHASE STYLE
+   Theme: High-Tech Educational / Professional Caution
+   Standard: WCAG 2.1 AA Compliant
+*/
+
 :root {
-    --primary-blue: #0ea5e9;
-    --caution-amber: #f59e0b;
-    --dark-bg: #020617;
-    --glass: rgba(255, 255, 255, 0.05);
+    /* Color Palette - 2026 Trends */
+    --bg-dark: #020617;          /* Deep Space Blue */
+    --card-bg: rgba(30, 41, 59, 0.7); /* Frosted Slate */
+    --primary: #38bdf8;          /* Electric Sky (AA Contrast) */
+    --accent: #818cf8;           /* Soft Indigo */
+    --caution: #fbbf24;          /* Amber for Precautions */
+    --text-main: #f8fafc;        /* High Contrast White */
+    --text-muted: #94a3b8;       /* Accessible Grey */
+    
+    /* Spacing & Effects */
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --radius: 16px;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 1. Reset & Accessibility Basics */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: var(--dark-bg);
-    color: #f8fafc;
-    font-family: 'Inter', system-ui, sans-serif;
-    margin: 0;
-    padding: 40px 20px;
-    line-height: 1.8;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    padding: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    border-radius: 24px;
-    border: 1px solid var(--glass);
-    margin-bottom: 50px;
-}
-
-h1 {
-    font-size: 3rem;
-    background: linear-gradient(to right, #38bdf8, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
-}
-
+/* 2. Layout Container */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+/* 3. Header - Hero Section */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #1e293b 0%, #020617 70%);
+    border-radius: var(--radius);
+    margin-bottom: 60px;
+    border: 1px solid var(--glass-border);
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 4. The Newsletter Cards */
 .newsletter-card {
-    background: var(--glass);
+    background: var(--card-bg);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 35px;
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 40px;
     margin-bottom: 40px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: var(--transition);
+    position: relative;
 }
 
 .newsletter-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary-blue);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
+/* 5. Content Styling */
 .caution-flag {
-    color: var(--caution-amber);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
+    color: var(--caution);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
 }
 
 .post-image {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 15px;
-    margin: 20px 0;
-    filter: grayscale(20%) brightness(80%);
-    transition: 0.3s;
+    border-radius: calc(var(--radius) - 4px);
+    margin: 25px 0;
+    border: 1px solid var(--glass-border);
 }
 
-.post-image:hover {
-    filter: grayscale(0%) brightness(100%);
-}
-
+/* 6. Accessible Links */
 .source-link {
     display: inline-block;
-    margin-top: 15px;
-    padding: 8px 16px;
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid var(--primary-blue);
-    border-radius: 8px;
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-size: 0.85rem;
-}
-
-.source-link:hover {
-    background: var(--primary-blue);
-    color: white;
-}
+    padding:
