@@ -1,47 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>AI Writing Revision | Final Prototype</title>
-</head>
-<body>
-<div class="container">
-    <header>
-        <h1>The AI Fluency Index</h1>
-        <p>Advanced Strategies for Writing Revision in 2026</p>
-    </header>
+/* AI ACADEMIC REVISION - ULTIMATE THEME 2026
+   Focus: Industrial Strength & Creative Clarity
+*/
 
-    <main>
-        <article class="newsletter-card">
-            <div class="meta-info">Release: Feb 25, 2026</div>
-            <h2>1. College Board: The Critical Thinking Crisis</h2>
-            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173" alt="Academic Exam" class="post-image">
-            <p>New research released today by the <strong>College Board</strong> reveals that while 74% of students use AI for essays, 84% of faculty worry it is eroding original thought. Our revision strategy must focus on "Thought Partnership" rather than delegation.</p>
-            <a href="post1.html" class="source-button">Analyze the Research →</a>
-        </article>
+:root {
+    /* Sophisticated Dark Mode Palette */
+    --void: #020617;         /* Deepest Blue */
+    --slate-800: #1e293b;    /* Card Surface */
+    --cyan-glow: #22d3ee;    /* Primary Action */
+    --indigo-glow: #6366f1;  /* Secondary Logic */
+    --amber-warning: #f59e0b; /* Caution/Ethics */
+    --text-silk: #f1f5f9;    /* Main Text */
+    
+    /* Advanced Effects */
+    --glass-bg: rgba(15, 23, 42, 0.8);
+    --neon-border: rgba(34, 211, 238, 0.2);
+    --sharp-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
 
-        <article class="newsletter-card">
-            <div class="meta-info">Update: Feb 23, 2026</div>
-            <h2>2. Georgetown's Human-Centered Gemini Rollout</h2>
-            <img src="https://images.unsplash.com/photo-1541339907198-e087569df910" alt="University Campus" class="post-image">
-            <p>Georgetown officially announced its transition to <strong>Google Gemini</strong> this week. The university is mandating a "Human-Centered" approach where faculty remain the ultimate judges of appropriate tool use during the writing process.</p>
-            <a href="post2.html" class="source-button">Read Policy Breakdown →</a>
-        </article>
+/* 1. Global Polish */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
 
-        <article class="newsletter-card">
-            <div class="meta-info">Global News: Feb 2026</div>
-            <h2>3. The "Manual 2026": Safety in Revision</h2>
-            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Global Data Network" class="post-image">
-            <p>The UAE's 2026 <strong>Safe AI Manual</strong> has set the gold standard for revision. It strictly prohibits "rephrasing without understanding." If a student cannot explain the "why" behind an AI edit, it's a violation of integrity.</p>
-            <a href="post3.html" class="source-button">View Safety Framework →</a>
-        </article>
-    </main>
+body {
+    background: radial-gradient(circle at 50% 0%, #0f172a 0%, var(--void) 100%);
+    color: var(--text-silk);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
 
-    <footer style="text-align:center; padding: 40px; border-top:1px solid var(--border);">
-        <p><a href="references.html" style="color:var(--accent-blue);">View Academic References (Feb 2026)</a></p>
-        <p>Final Project by <strong>Nicholas Best</strong></p>
-    </footer>
-</div>
-</body>
-</html>
+/* 2. Container & Layout */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 3. Hero Header - Dynamic & Creative */
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid var(--neon-border);
+}
+
+header h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    background: linear-gradient(to bottom, #fff 20%, var(--cyan-glow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--indigo-glow);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+/* 4. Advanced Newsletter Cards */
+.newsletter-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--neon-border);
+    border-radius: 32px;
+    padding: 60px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.newsletter-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 4px;
+    background: linear-gradient(90deg, transparent, var(--cyan-glow), transparent);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.newsletter-card:hover {
+    transform: translateY(-15px) scale(1.01);
+    border-color: var(--cyan-glow);
+    box-shadow: var(--sharp-shadow);
+}
+
+.newsletter-card:hover::before {
+    opacity: 1;
+}
+
+/* 5. Content Details */
+.caution-flag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--amber-warning);
+    border: 1px solid var(--amber-warning);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.post-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 30px 0;
+    filter: brightness(0.8) contrast(1.2);
+    transition: 0.5s;
+}
+
+.newsletter-card:hover .post-image {
+    filter: brightness(1) contrast(1);
+}
+
+/* 6. Professional Buttons */
+.source-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 18px 40px;
+    background: var(--text-silk);
+    color: var(--void);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.source-button:hover {
+    background: var(--cyan-glow);
+    transform: scale(1.05);
+}
+
+/* 7. Footer / Reference Section */
+footer {
+    padding: 100px 0;
+    text-align: center;
+    border-top: 1px solid var(--neon-border);
+}
+
+footer a {
+    color: var(--indigo-glow);
+    text-decoration: none;
+    font-weight: bold;
+}
